@@ -58,27 +58,44 @@
 	
 	/* eslint-enable no-unused-vars */
 	
-	// function toggleService(argument) {
-	//   // body...
-	// }
+	// Selectors
+	var $hardwoodCallout = (0, _jquery2.default)('#hardwood-callout');
+	/* eslint-disable no-unused-vars */
 	
+	var $buffCallout = (0, _jquery2.default)('#buff-callout');
+	var $sandingCallout = (0, _jquery2.default)('#sanding-callout');
+	var $gallery = (0, _jquery2.default)('.gallery');
+	
+	// Private methods
 	function calloutClickHandlerFactory(name) {
 	  return function calloutClickHandler(event) {
 	    event.preventDefault();
-	    /* eslint-disable no-console */
-	    console.log(name + ' callout clicked', event);
-	    /* eslint-enable */
+	    var $callouts = [{
+	      button: $hardwoodCallout,
+	      name: 'hardwood-service'
+	    }, {
+	      button: $buffCallout,
+	      name: 'buff-coat-service'
+	    }, {
+	      button: $sandingCallout,
+	      name: 'sanding-service'
+	    }];
+	    var $selectedCallout = $callouts.find(function (callout) {
+	      return callout.name === name;
+	    });
+	    var $currentCallout = $callouts.find(function (callout) {
+	      return callout.button.hasClass('service-callout--is-active');
+	    });
+	
+	    $currentCallout.button.removeClass('service-callout--is-active');
+	    (0, _jquery2.default)('#' + $currentCallout.name).removeClass('service--is-active');
+	    $selectedCallout.button.addClass('service-callout--is-active');
+	    (0, _jquery2.default)('#' + $selectedCallout.name).addClass('service--is-active');
 	  };
 	}
-	/* eslint-disable no-unused-vars */
 	
-	
+	// Initializer function
 	function init() {
-	  var $hardwoodCallout = (0, _jquery2.default)('#hardwood-callout');
-	  var $buffCallout = (0, _jquery2.default)('#buff-callout');
-	  var $sandingCallout = (0, _jquery2.default)('#sanding-callout');
-	  var $gallery = (0, _jquery2.default)('.gallery');
-	
 	  var hardwoodCalloutClickHandler = calloutClickHandlerFactory('hardwood-service');
 	  var buffCalloutClickHandler = calloutClickHandlerFactory('buff-coat-service');
 	  var sandingCalloutClickHandler = calloutClickHandlerFactory('sanding-service');
@@ -91,6 +108,22 @@
 	  $buffCallout.on('click', buffCalloutClickHandler);
 	  $sandingCallout.on('click', sandingCalloutClickHandler);
 	}
+	
+	/* eslint-disable */
+	// Smooth scrolling for scroll links
+	(0, _jquery2.default)('.btn-scroll').click(function () {
+	  if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
+	    var target = (0, _jquery2.default)(this.hash);
+	    target = target.length ? target : (0, _jquery2.default)('[name=' + this.hash.slice(1) + ']');
+	    if (target.length) {
+	      (0, _jquery2.default)('html,body').animate({
+	        scrollTop: target.offset().top
+	      }, 500);
+	      return false;
+	    }
+	  }
+	});
+	/* eslint-enable */
 	
 	init();
 
