@@ -129,7 +129,6 @@
 	
 	  var $offCanvas = $('#offCanvas');
 	  $offCanvas.on('click', 'a', function (event) {
-	    console.log('event:', event);
 	    var targetHash = event.target.hash;
 	    var $target = $(targetHash);
 	    $('#offCanvas').foundation('close');
