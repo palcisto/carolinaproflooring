@@ -24,242 +24,290 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header>
-      <nav>
-        <!-- <div class="title-bar" data-responsive-toggle="mainNav" data-hide-for="medium">
-          <button class="menu-icon" type="button" data-toggle="mainNav"></button>
-          <div class="title-bar-title">Menu</div>
-        </div> -->
-        <a class="logo" href="#"><img src="assets/images/logo.png" alt="Carolina Pro Flooring" /></a>
-        <ul class="nav-list" id="mainNav">
-          <li class="nav-list__item"><a href="#services">Services</a></li>
-          <li class="nav-list__item"><a href="#about-us">About Us</a></li>
-          <li class="nav-list__item"><a href="#vision">Vision</a></li>
-          <li class="nav-list__item"><a href="#our-work">Gallery</a></li>
-          <li class="nav-list__item"><a href="#contact-us">Contact</a></li>
-        </ul>
-        <div class="quick-contact">
-          <span class="tel"><a href="tel:704-804-9093"><i class="icon icon--phone"></i> <span class="hide-for-small-only">704-804-9093</span></a></span>
-          <span class="fb"><a href="https://www.facebook.com/CarolinaProFlooring/"><i class="icon icon--facebook-circle"></i> <span class="hide-for-small-only">Facebook</span></a></span>
-        </div>
-      </nav>
-    </header>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-position="left">
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
 
-    <main>
-      <div class="masthead">
-        <div class="headline">
-          <h1 class="headline__title">The Beauty Of <strong>Hardwood</strong></h1>
-          <p class="headline__by-line">Transform your home with the magic of hardwood flooring.
-            <br />From just 99 cents/sq. foot</p>
+          <ul class="mobile-ofc vertical menu">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#our-vision">Vision</a></li>
+            <li><a href="#our-work">Gallery</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+          </ul>
         </div>
-        <a class="button--cta masthead__cta" href="#services">See What Hardwood Can Do For You</a>
-        <div class="bg-slider">
-          <div class="bg-slider__controls">
-            <button class="prev-btn" type="button"><span>Previous</span></button>
-            <button class="next-btn" type="button"><span>Next</span></button>
-          </div>
-          <div class="slide slide--1"></div>
-        </div>
-      </div>
-
-      <section id="services" class="services">
-        <div class="service-callouts">
-          <button class="service-callout service-callout--hardwood service-callout--is-active" id="hardwood-callout" type="button">
-            <span class="service-callout__inner">
-              <strong class="service-callout__title">Hardwood Floor <br>Installation</strong>
-              <span class="mock-btn">See More</span>
-            </span>
-          </button>
-          <button class="service-callout service-callout--buff" id="buff-callout" type="button">
-            <span class="service-callout__inner">
-              <strong class="service-callout__title">Buff <br>&amp; Coat</strong>
-              <span class="mock-btn">See More</span>
-            </span>
-          </button>
-          <button class="service-callout service-callout--sanding" id="sanding-callout" type="button">
-            <span class="service-callout__inner">
-              <strong class="service-callout__title">Sanding <br>&amp; Finishing</strong>
-              <span class="mock-btn">See More</span>
-            </span>
-          </button>
-        </div>
-        <div class="service service--hardwood service--is-active" id="hardwood-service">
-          <h2 class="service__heading">Hardwood Floor Installation</h2>
-          <div class="content-container">
-            <div class="content-padding">
-              <p>Wood floors offer beauty, warmth and increase the property value of your home. Wood flooring should be
-                <br /> a priority when investing in your homes. Most homes with wood floors sell faster and for higher prices.</p>
-              <p>Wood floors properly installed and maintained, provide you with a long-lasting, beautiful floor you can enjoy for a
-                <br /> very long time. The big advantages of choosing to insall Hardwood floors in your home is that Wood flooring
-                <br /> can be restored And refinished many times over it’s life, recovering the beauty they once had.</p>
+    
+        <div class="off-canvas-content" data-off-canvas-content>
+          <header class="title-bar show-for-small-only">
+            <div class="title-bar-left">
+              <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+              <span class="title-bar-title"><a class="logo" href="#"><img src="assets/images/logo.png" alt="Carolina Pro Flooring" /></a></span>
             </div>
-            <hr class="divider">
-            <div class="hardwood-installations">
-              <h3>Carolina Pro Flooring Provides Installations For:</h3>
-              <ul>
-                <li>Unfinished Solid &amp; Engineered Hardwood</li>
-                <li>Prefinished Solid, Engineered &amp; Laminate Hardwood</li>
-                <li>Domestic &amp; Exotic Woods</li>
+            <div class="title-bar-right">
+              <div class="quick-contact">
+                <span class="tel hide-for-small-only"><i class="icon icon--phone"></i> <span>704-804-9093</span></span>
+                <span class="tel show-for-small-only"><a href="tel:704-804-9093"><i class="icon icon--phone"></i></a></span>
+                <span class="fb"><a href="https://www.facebook.com/CarolinaProFlooring/"><i class="icon icon--facebook-circle"></i> <span class="hide-for-small-only">Facebook</span></a></span>
+              </div>
+            </div>
+          </header>
+
+          <header class="hide-for-small-only">
+            <nav>
+              <!-- <div class="title-bar" data-responsive-toggle="mainNav" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="mainNav"></button>
+                <div class="title-bar-title">Menu</div>
+              </div> -->
+              <a class="logo" href="#"><img src="assets/images/logo.png" alt="Carolina Pro Flooring" /></a>
+              <ul class="nav-list" id="mainNav">
+                <li class="nav-list__item"><a href="#services">Services</a></li>
+                <li class="nav-list__item"><a href="#about-us">About Us</a></li>
+                <li class="nav-list__item"><a href="#our-vision">Vision</a></li>
+                <li class="nav-list__item"><a href="#our-work">Gallery</a></li>
+                <li class="nav-list__item"><a href="#contact-us">Contact</a></li>
+              </ul>
+              <div class="quick-contact">
+                <span class="tel hide-for-small-only"><i class="icon icon--phone"></i> <span>704-804-9093</span></span>
+                <span class="tel show-for-small-only"><a href="tel:704-804-9093"><i class="icon icon--phone"></i></a></span>
+                <span class="fb"><a href="https://www.facebook.com/CarolinaProFlooring/"><i class="icon icon--facebook-circle"></i> <span class="hide-for-small-only">Facebook</span></a></span>
+              </div>
+            </nav>
+          </header>
+
+          <main>
+            <div class="masthead">
+              <div class="headline">
+                <h1 class="headline__title">The Beauty Of <strong>Hardwood</strong></h1>
+                <p class="headline__by-line">Transform your home with the magic of hardwood flooring.
+                  <br />From just 99 cents/sq. foot</p>
+              </div>
+              <a class="button--cta masthead__cta" href="#services">See What Hardwood Can Do For You</a>
+              <div class="bg-slider">
+                <div class="bg-slider__controls">
+                  <button class="prev-btn" type="button"><span>Previous</span></button>
+                  <button class="next-btn" type="button"><span>Next</span></button>
+                </div>
+                <div class="slide slide--1"></div>
+              </div>
+            </div>
+
+            <section id="services" class="services">
+              <div class="service-callouts">
+                <a class="service-callout service-callout--hardwood service-callout--is-active" href="#hardwood-service" id="hardwood-callout">
+                  <span class="service-callout__inner">
+                    <strong class="service-callout__title">Hardwood Floor <br>Installation</strong>
+                    <span class="mock-btn">See More</span>
+                  </span>
+                </a>
+                <a class="service-callout service-callout--buff" href="#buff-coat-service" id="buff-callout">
+                  <span class="service-callout__inner">
+                    <strong class="service-callout__title">Buff <br>&amp; Coat</strong>
+                    <span class="mock-btn">See More</span>
+                  </span>
+                </a>
+                <a class="service-callout service-callout--sanding" href="#sanding-service" id="sanding-callout">
+                  <span class="service-callout__inner">
+                    <strong class="service-callout__title">Sanding <br>&amp; Finishing</strong>
+                    <span class="mock-btn">See More</span>
+                  </span>
+                </a>
+              </div>
+              <div class="service service--hardwood service--is-active" id="hardwood-service">
+                <h2 class="service__heading">Hardwood Floor Installation</h2>
+                <div class="content-container">
+                  <div class="content-padding">
+                    <p>Wood floors offer beauty, warmth and increase the property value of your home. Wood flooring should be
+                      <br /> a priority when investing in your homes. Most homes with wood floors sell faster and for higher prices.</p>
+                    <p>Wood floors properly installed and maintained, provide you with a long-lasting, beautiful floor you can enjoy for a
+                      <br /> very long time. The big advantages of choosing to insall Hardwood floors in your home is that Wood flooring
+                      <br /> can be restored And refinished many times over it’s life, recovering the beauty they once had.</p>
+                  </div>
+                  <hr class="divider">
+                  <div class="hardwood-installations">
+                    <h3>Carolina Pro Flooring Provides Installations For:</h3>
+                    <ul>
+                      <li>Unfinished Solid &amp; Engineered Hardwood</li>
+                      <li>Prefinished Solid, Engineered &amp; Laminate Hardwood</li>
+                      <li>Domestic &amp; Exotic Woods</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="wood-offerings">
+                  <h3>Offering A Variety of Domestic &amp; Exotic Woods</h3>
+                  <ul>
+                    <li>Maple</li>
+                    <li>Hickory</li>
+                    <li>American Walnut</li>
+                    <li>American Cherry</li>
+                    <li>Oak</li>
+                    <li>Pine</li>
+                    <li>Heart Pine</li>
+                    <li>Reclaimed Pine</li>
+                    <li>Australian Cypress</li>
+                    <li>Brazilian Cherry</li>
+                    <li>Eucalyptus</li>
+                    <li>Santos Mahogany</li>
+                  </ul>
+                  <div class="cta">
+                    <em>Starting as low as 99 cents per square foot</em>
+                    <strong>Call 704-804-9093 for a consultation today!</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="service service--buff-coat" id="buff-coat-service">
+                <h2 class="service__heading">Buff &amp; Coat</h2>
+                <div class="content-container content-padding">
+                  <h3>What is buff and coat?</h3>
+                  <p>It is a light dustless sanding process that sands off the top layer of the wood which in most cases eliminates the old scratched,dull and dirty finish. Bringing life back to the good looking shape it once had with a fresh top coat adding a long lasting life expectancy without the need of a full refinish process. It's the most affordable,quick and hassle free process that can be done to most floors,mostly done by real state agents,costumers with heavy foot traffic also those looking to keep their wood floors looking like new for a long life expectancy floors.</p>
+                  <p>Wood floors are constantly getting abused by normal tear and wear and most homeowners don't realize the importance of regular  maintenance to their wood floors until is too late!</p>
+                  <h3>Not all wood floors can be recoated!</h3>
+                  <p>Floors that can't be recoated may have been finished and/or maintened with various type waxes and/or maintened with silicon cleaners or oil soaps. Those are nearly impossible to recoat as a fresh coat of polyurethane simply won't bond to them. Even after a aggressive buffing process and deeper cleaning using either paint thinner or water to tack clean it might not be enough to provide a safe bond leading to a unsatisfying finishing process. Also most floors pre-finished floors that were manufactured with aluminum oxide coats,these finishes are so hard that mechanical screening doesn't create enough of a bonding texture. Some Aluminum oxide finishes can be recoated but they have to special treated with chemicals that will allow a decent bond before finishing process.</p>
+                </div>
+              </div>
+              <div class="service service--sanding-finishing" id="sanding-service">
+                <h2 class="service__heading">Sanding &amp; Finishing</h2>
+                <div class="content-container content-padding">
+                  <p>From our very Beginnings, bringing old wood floors back to life has been the backbone of our business. We specialize in sanding new unfinished floors as well all of your old floors and restoring them to the shine they once had.</p>
+                  <p>When a sanding process is required most people fear the worst,fortunately our team will provide you with a great experience by sanding and finishing your floors using the most advanced machinery available,which includes a dustless system that contains all the dust created by the machines into a vacuum sealed containment.</p>
+                  <p>Our team is instructed to prepare each project in the most effective and efficient way to provide a hassle free environment during and even after the sanding process. We offer a large variety of different stain color samples that can be shown in hand  before project starting date so you can start picturing what you will choose. A much more affecting way is by doing samples on existing floors during the sanding process so you can see the stain color with the contrast of your wall colors,cabinetry and lighting.</p>
+                  <p>Once the stain color is chosen we can offer a large variety of finishing products to your preference. Ranging from the top dolar high quality products to the most friendly low budget products that will offer a good quality for a lower price.</p>
+                  <p>We can offer a wide range of high quality finishing products that fits your budget and your needs.</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- <section id="other-services" class="content-section other-services">
+              <div class="content-container">
+                <h2>Other Services</h2>
+                <p class="content-padding">This is where we can say something short about the other services offered. We might not need this here but it's always better to plan ahead for such things as you never know what life will bring to you.</p>
+                <h3>Including:</h3>
+                <div class="additional-services">
+                  <div class="additional-service">
+                    <h4>Service</h4>
+                    <p>Do we want a short description of the service to go here? Maybe just a couple of lines...</p>
+                  </div>
+                  <div class="additional-service">
+                    <h4>Service</h4>
+                    <p>Do we want a short description of the service to go here? Maybe just a couple of lines...</p>
+                  </div>
+                  <div class="additional-service">
+                    <h4>Service</h4>
+                    <p>Do we want a short description of the service to go here? Maybe just a couple of lines...</p>
+                  </div>
+                </div>
+              </div>
+            </section> -->
+
+            <section id="about-us" class="content-section about-us">
+              <div class="content-container">
+                <h2>About Us</h2>
+                <div class="content-padding">
+                  <p>Carolina Pro Flooring has its roots in a two-decade, family-shared passion for excellence and beauty in wood flooring.
+                    <br> Rafael Ferreira, at the heart of Carolina Pro Flooring, discovered his own vision for providing quality custom wood flooring designs while apprenticing under his father and uncles.</p>
+                  <p>The collective wisdom and experience of his family, along with valuable opportunities to work with other established flooring companies, has given Rafael insight and knowledge into the best practices for the craft including material selection, treatment, design, and installation. These experiences, combined with a desire to provide highest quality wood flooring service, led to the creation of Carolina Pro Flooring, or CPF.</p>
+                </div>
+              </div>
+            </section>
+
+            <section id="our-vision" class="content-section our-vision">
+              <div class="content-container">
+                <h2>Our Vision</h2>
+                <div class="content-padding">
+                  <p>The flooring industry is full of innovative designers offering high-quality, elegant solutions to the market’s wood flooring needs. Unfortunately, the highest level of artistic attention to beautiful floors comes at a high price. For those whose budgets cannot reach high-end service, the only option is to compromise and to choose that which is affordable rather than that which they envision for their homes and offices.</p>
+                  <p>CPF aims to bridge the gap between high-quality wood flooring services and affordability.
+                    <br>We wish to offer client-centered services that provide you with ease, peace of mind, and confidence in knowing that your floors are in the hands of professionals that do not compromise quality. We believe that when your priorities become our own, the result will be floors that you will love.</p>
+                  <p>We do it right the first time. When doing your floors, don’t think twice — call Carolina Pro Flooring and have peace of mind!</p>
+                </div>
+              </div>
+              <div id="testimonials" class="testimonials">
+                <div class="testimonials-container">
+                  <div class="testimonial">
+                    <blockquote>
+                      <p>&quot;We have just had all our floors sanded and finished by Carolina Pro Flooring Inc.!
+                        <br> What an outstanding job ! Hardly any dust and would definitely give them A 5 Star and recommend this company to everyone. Our house which is now 17 years old - looks brand new!
+                        <br> Very professional Company to work with!&quot;</p>
+                      <span class="testimonial__author">Andrea Schewitz</span>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="see-more-bar">
+                <a href="https://www.facebook.com/pg/CarolinaProFlooring/reviews/">See what other people are saying about Carolina Pro Flooring!</a>
+              </div>
+            </section>
+
+            <section id="our-work" class="content-section our-work">
+              <div class="content-container">
+                <h2>Our Work</h2>
+                <div class="gallery">
+                  <div class="gallery__slide"><img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11890958_649899435150869_7102109105185651231_n.jpg?oh=162b4f80d42cce0e711d835a76f0e96f&oe=58F8058D" alt="Project in progress"></div>
+                  <div class="gallery__slide"><img src="/assets/images/gallery-image-01.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="see-more-bar">
+                <a href="https://www.facebook.com/CarolinaProFlooring/photos/">See more of our work on facebook</a>
+              </div>
+            </section>
+
+            <section id="contact-us" class="content-section contact-us">
+              <div class="content-container">
+                <h2>Contact Us</h2>
+                <p class="contact-us__message">Reimagine your floors for as little as $0.99 per square foot.
+                  <br>Contact us for a free consultation and let us help you turn your vision into beautiful flooring!</p>
+                <div class="contact-us__cta">
+                  <p>Call for a quote today!</p>
+                  <span class="contact-us__phone--desktop">704-804-9093</span>
+                  <a href="tel:704-804-9093" class="contact-us__phone--mobile">704-804-9093</a>
+                </div>
+              </div>
+            </section>
+          </main>
+
+          <footer>
+            <div class="content-container">
+              <div class="footer-branding">
+                <img src="assets/images/logo-white.png" alt="Carolina Pro Flooring" />
+                <p class="copyright">&copy; Copyright 2016 - Carolina Pro Flooring</p>
+              </div>
+              <ul class="footer-nav">
+                <li><a href="#services" class="footer-nav__label">Services</a>
+                  <ul class="footer-sub-nav hide">
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Stairways &amp; Handrails</a></li>
+                    <li><a href="#">Sanding &amp; Buffing</a></li>
+                  </ul>
+                </li>
+                <li><a href="#our-vision" class="footer-nav__label">Vision</a></li>
+                <li><a href="#about-us" class="footer-nav__label">About Us</a></li>
+                <li><a href="#our-work" class="footer-nav__label">Gallery</a></li>
+                <li>
+                  <a href="#contact-us" class="footer-nav__label">Contact</a>
+                  <address class="cpf-contact-info">
+                    <span class="postal-address">8628 Silver Falls Way, Charlotte, NC 28227</span>
+                    <span class="phone-number">Phone: <span class="tel">704-804-9093</span></span>
+                    <span>Email: rafael@carolinaproflooring.com</span>
+                  </address>
+                </li>
               </ul>
             </div>
-          </div>
-          <div class="wood-offerings">
-            <h3>Offering A Variety of Domestic &amp; Exotic Woods</h3>
-            <ul>
-              <li>Maple</li>
-              <li>Hickory</li>
-              <li>American Walnut</li>
-              <li>American Cherry</li>
-              <li>Oak</li>
-              <li>Pine</li>
-              <li>Heart Pine</li>
-              <li>Reclaimed Pine</li>
-              <li>Australian Cypress</li>
-              <li>Brazilian Cherry</li>
-              <li>Eucalyptus</li>
-              <li>Santos Mahogany</li>
-            </ul>
-            <div class="cta">
-              <em>Starting as low as 99 cents per square foot</em>
-              <strong>Call 704-804-9093 for a consultation today!</strong>
-            </div>
-          </div>
+          </footer>
         </div>
-        <div class="service service--buff-coat" id="buff-coat-service">
-          <h2 class="service__heading">Buff &amp; Coat</h2>
-          <p></p>
-        </div>
-        <div class="service service--sanding-finishing" id="sanding-service">
-          <h2 class="service__heading">Sanding &amp; Finishing</h2>
-          <p></p>
-        </div>
-      </section>
-
-      <!-- <section id="other-services" class="content-section other-services">
-        <div class="content-container">
-          <h2>Other Services</h2>
-          <p class="content-padding">This is where we can say something short about the other services offered. We might not need this here but it's always better to plan ahead for such things as you never know what life will bring to you.</p>
-          <h3>Including:</h3>
-          <div class="additional-services">
-            <div class="additional-service">
-              <h4>Service</h4>
-              <p>Do we want a short description of the service to go here? Maybe just a couple of lines...</p>
-            </div>
-            <div class="additional-service">
-              <h4>Service</h4>
-              <p>Do we want a short description of the service to go here? Maybe just a couple of lines...</p>
-            </div>
-            <div class="additional-service">
-              <h4>Service</h4>
-              <p>Do we want a short description of the service to go here? Maybe just a couple of lines...</p>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <section id="about-us" class="content-section about-us">
-        <div class="content-container">
-          <h2>About Us</h2>
-          <div class="content-padding">
-            <p>Carolina Pro Flooring has its roots in a two-decade, family-shared passion for excellence and beauty in wood flooring.
-              <br> Rafael Ferreira, at the heart of Carolina Pro Flooring, discovered his own vision for providing quality custom wood flooring designs while apprenticing under his father and uncles.</p>
-            <p>The collective wisdom and experience of his family, along with valuable opportunities to work with other established flooring companies, has given Rafael insight and knowledge into the best practices for the craft including material selection, treatment, design, and installation. These experiences, combined with a desire to provide highest quality wood flooring service, led to the creation of Carolina Pro Flooring, or CPF.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="our-vision" class="content-section our-vision">
-        <div class="content-container">
-          <h2>Our Vision</h2>
-          <div class="content-padding">
-            <p>The flooring industry is full of innovative designers offering high-quality, elegant solutions to the market’s wood flooring needs. Unfortunately, the highest level of artistic attention to beautiful floors comes at a high price. For those whose budgets cannot reach high-end service, the only option is to compromise and to choose that which is affordable rather than that which they envision for their homes and offices.</p>
-            <p>CPF aims to bridge the gap between high-quality wood flooring services and affordability.
-              <br>We wish to offer client-centered services that provide you with ease, peace of mind, and confidence in knowing that your floors are in the hands of professionals that do not compromise quality. We believe that when your priorities become our own, the result will be floors that you will love.</p>
-            <p>We do it right the first time. When doing your floors, don’t think twice — call Carolina Pro Flooring and have peace of mind!</p>
-          </div>
-        </div>
-        <div id="testimonials" class="testimonials">
-          <div class="testimonials-container">
-            <div class="testimonial">
-              <blockquote>
-                <p>&quot;We have just had all our floors sanded and finished by Carolina Pro Flooring Inc.!
-                  <br> What an outstanding job ! Hardly any dust and would definitely give them A 5 Star and recommend this company to everyone. Our house which is now 17 years old - looks brand new!
-                  <br> Very professional Company to work with!&quot;</p>
-                <span class="testimonial__author">Andrea Schewitz</span>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="see-more-bar">
-          <a href="#">See what other people are saying about Carolina Pro Flooring!</a>
-        </div>
-      </section>
-
-      <section id="our-work" class="content-section our-work">
-        <div class="content-container">
-          <h2>Our Work</h2>
-          <div class="gallery">
-            <div class="gallery__slide"><img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11890958_649899435150869_7102109105185651231_n.jpg?oh=162b4f80d42cce0e711d835a76f0e96f&oe=58F8058D" alt="Project in progress"></div>
-            <div class="gallery__slide"><img src="/assets/images/gallery-image-01.jpg" alt=""></div>
-          </div>
-        </div>
-        <div class="see-more-bar">
-          <a href="#">See more of our work on facebook</a>
-        </div>
-      </section>
-
-      <section id="contact-us" class="content-section contact-us">
-        <div class="content-container">
-          <h2>Contact Us</h2>
-          <p class="contact-us__message">Reimagine your floors for as little as $0.99 per square foot.
-            <br>Contact us for a free consultation and let us help you turn your vision into beautiful flooring!</p>
-          <div class="contact-us__cta">
-            <p>Call for a quote today!</p>
-            <span class="contact-us__phone--desktop">704-804-9093</span>
-            <a href="tel:704-804-9093" class="contact-us__phone--mobile">704-804-9093</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="content-container">
-        <div class="footer-branding">
-          <img src="assets/images/logo-white.png" alt="Carolina Pro Flooring" />
-          <p class="copyright">&copy; Copyright 2016 - Carolina Pro Flooring</p>
-        </div>
-        <ul class="footer-nav">
-          <li><a href="#services" class="footer-nav__label">Services</a>
-            <ul class="footer-sub-nav">
-              <li><a href="#">Installation</a></li>
-              <li><a href="#">Stairways &amp; Handrails</a></li>
-              <li><a href="#">Sanding &amp; Buffing</a></li>
-            </ul>
-          </li>
-          <li><a href="#about-us" class="footer-nav__label">About Us</a></li>
-          <li><a href="#our-work" class="footer-nav__label">Gallery</a></li>
-          <li>
-            <a href="#contact-us" class="footer-nav__label">Contact</a>
-            <address class="cpf-contact-info">
-              <span class="postal-address">8215 Long Creek Club Dr, Charlotte, NC 28216</span>
-              <span class="phone-number">Phone: <span class="tel">704-804-9093</span></span>
-              <span>Email: rafael@carolinaproflooring.com</span>
-            </address>
-          </li>
-        </ul>
       </div>
-    </footer>
+    </div>
 
     <script src="assets/js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
+    <!-- <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-    </script>
+    </script> -->
   </body>
 </html>
